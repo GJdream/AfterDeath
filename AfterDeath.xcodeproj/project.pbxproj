@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18507BD017FABE2500F0940D /* DialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18507BCF17FABE2500F0940D /* DialViewController.m */; };
 		189619FB17F87F4700D3F6A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189619FA17F87F4700D3F6A4 /* Foundation.framework */; };
 		189619FD17F87F4700D3F6A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189619FC17F87F4700D3F6A4 /* CoreGraphics.framework */; };
 		189619FF17F87F4700D3F6A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189619FE17F87F4700D3F6A4 /* UIKit.framework */; };
@@ -25,6 +26,8 @@
 		18961A3317F880BF00D3F6A4 /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18961A3117F880BF00D3F6A4 /* ContactsViewController.xib */; };
 		18961A3617F8822000D3F6A4 /* Contacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18961A3517F8822000D3F6A4 /* Contacter.m */; };
 		18F931B517F8E173005533E1 /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F931B417F8E173005533E1 /* ContactList.m */; };
+		18F931BB17F9D011005533E1 /* DashBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F931BA17F9D011005533E1 /* DashBoardViewController.m */; };
+		18F931BF17F9D0F7005533E1 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F931BD17F9D0F7005533E1 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18507BCE17FABE2500F0940D /* DialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialViewController.h; sourceTree = "<group>"; };
+		18507BCF17FABE2500F0940D /* DialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialViewController.m; sourceTree = "<group>"; };
 		189619F717F87F4700D3F6A4 /* AfterDeath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfterDeath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189619FA17F87F4700D3F6A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		189619FC17F87F4700D3F6A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,6 +69,10 @@
 		18F931B317F8E173005533E1 /* ContactList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactList.h; sourceTree = "<group>"; };
 		18F931B417F8E173005533E1 /* ContactList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactList.m; sourceTree = "<group>"; };
 		18F931B617F8E302005533E1 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		18F931B917F9D011005533E1 /* DashBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashBoardViewController.h; sourceTree = "<group>"; };
+		18F931BA17F9D011005533E1 /* DashBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashBoardViewController.m; sourceTree = "<group>"; };
+		18F931BC17F9D0F7005533E1 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		18F931BD17F9D0F7005533E1 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,12 +135,18 @@
 				18961A0917F87F4700D3F6A4 /* AppDelegate.h */,
 				18961A0A17F87F4700D3F6A4 /* AppDelegate.m */,
 				18961A0C17F87F4700D3F6A4 /* Main.storyboard */,
+				18F931B917F9D011005533E1 /* DashBoardViewController.h */,
+				18F931BA17F9D011005533E1 /* DashBoardViewController.m */,
+				18507BCE17FABE2500F0940D /* DialViewController.h */,
+				18507BCF17FABE2500F0940D /* DialViewController.m */,
 				18961A0F17F87F4700D3F6A4 /* ViewController.h */,
 				18961A1017F87F4700D3F6A4 /* ViewController.m */,
 				18961A1217F87F4700D3F6A4 /* Images.xcassets */,
 				18F931B617F8E302005533E1 /* ContactsViewController.h */,
 				18961A3017F880BF00D3F6A4 /* ContactsViewController.m */,
 				18961A3117F880BF00D3F6A4 /* ContactsViewController.xib */,
+				18F931BC17F9D0F7005533E1 /* SettingsViewController.h */,
+				18F931BD17F9D0F7005533E1 /* SettingsViewController.m */,
 				18961A3417F8822000D3F6A4 /* Contacter.h */,
 				18961A3517F8822000D3F6A4 /* Contacter.m */,
 				18F931B317F8E173005533E1 /* ContactList.h */,
@@ -268,12 +283,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18507BD017FABE2500F0940D /* DialViewController.m in Sources */,
 				18F931B517F8E173005533E1 /* ContactList.m in Sources */,
 				18961A1117F87F4700D3F6A4 /* ViewController.m in Sources */,
 				18961A3617F8822000D3F6A4 /* Contacter.m in Sources */,
+				18F931BF17F9D0F7005533E1 /* SettingsViewController.m in Sources */,
 				18961A3217F880BF00D3F6A4 /* ContactsViewController.m in Sources */,
 				18961A0B17F87F4700D3F6A4 /* AppDelegate.m in Sources */,
 				18961A0717F87F4700D3F6A4 /* main.m in Sources */,
+				18F931BB17F9D011005533E1 /* DashBoardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
