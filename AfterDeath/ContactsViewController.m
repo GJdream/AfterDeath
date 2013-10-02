@@ -8,8 +8,10 @@
 
 #import "ContactsViewController.h"
 #import "Contacter.h"
+#import "AppDelegate.h"
+#import <AddressBookUI/AddressBookUI.h>
 
-@interface ContactsViewController ()
+@interface ContactsViewController () <ABNewPersonViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *contactTable;
 
@@ -69,6 +71,9 @@
 
 
 - (IBAction)addContact:(id)sender {
+    ABNewPersonViewController *picker = [[ABNewPersonViewController alloc] init];
+	picker.newPersonViewDelegate = self;
+    [self.navigationController pushViewController:picker animated:YES];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -79,5 +84,27 @@
 - (BOOL)tableView:(UITableView *)tableView canPerformAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
     return YES;
 }
+
+#pragma mark ABNewPersonViewControllerDelegate methods
+// Dismisses the new-person view controller.
+- (void)newPersonViewController:(ABNewPersonViewController *)newPersonViewController didCompleteWithNewPerson:(ABRecordRef)person
+{
+    if (person) {
+        CFErrorRef error=NULL;
+        ABRecordRef parentGroup = ABAddressBookGetGroupWithRecordID(newPersonViewController.addressBook, 0);
+        //set selected group id
+        ABGroupAddMember(parentGroup, person,&error);
+        ABAddressBookSave(newPersonViewController.addressBook, &error);
+        ABRecordID rcId = ABRecordGetRecordID(person);
+        ABAddressBookSave (newPersonViewController.addressBook, &error);
+        
+        
+        
+        [self.navigationController popViewControllerAnimated:YES];
+
+    }
+	[self.navigationController popViewControllerAnimated:YES];
+}
+
 
 @end

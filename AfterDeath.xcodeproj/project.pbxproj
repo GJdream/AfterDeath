@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18507BD017FABE2500F0940D /* DialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18507BCF17FABE2500F0940D /* DialViewController.m */; };
+		18507BD217FB145F00F0940D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18507BD117FB145F00F0940D /* AddressBookUI.framework */; };
 		189619FB17F87F4700D3F6A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189619FA17F87F4700D3F6A4 /* Foundation.framework */; };
 		189619FD17F87F4700D3F6A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189619FC17F87F4700D3F6A4 /* CoreGraphics.framework */; };
 		189619FF17F87F4700D3F6A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189619FE17F87F4700D3F6A4 /* UIKit.framework */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		18507BCE17FABE2500F0940D /* DialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialViewController.h; sourceTree = "<group>"; };
 		18507BCF17FABE2500F0940D /* DialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialViewController.m; sourceTree = "<group>"; };
+		18507BD117FB145F00F0940D /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		189619F717F87F4700D3F6A4 /* AfterDeath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfterDeath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189619FA17F87F4700D3F6A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		189619FC17F87F4700D3F6A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18507BD217FB145F00F0940D /* AddressBookUI.framework in Frameworks */,
 				189619FD17F87F4700D3F6A4 /* CoreGraphics.framework in Frameworks */,
 				189619FF17F87F4700D3F6A4 /* UIKit.framework in Frameworks */,
 				189619FB17F87F4700D3F6A4 /* Foundation.framework in Frameworks */,
@@ -121,6 +124,7 @@
 		189619F917F87F4700D3F6A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18507BD117FB145F00F0940D /* AddressBookUI.framework */,
 				189619FA17F87F4700D3F6A4 /* Foundation.framework */,
 				189619FC17F87F4700D3F6A4 /* CoreGraphics.framework */,
 				189619FE17F87F4700D3F6A4 /* UIKit.framework */,

@@ -369,7 +369,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bJj-EK-YCt" kind="modal" id="bk6-VN-YrA"/>
+                                    <segue destination="UfJ-Ol-VPn" kind="modal" id="bk6-VN-YrA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AtQ-Rt-1iv">
@@ -446,13 +446,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ZIe-la-2O5">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="8Kv-mN-l42">
+                            <connections>
+                                <action selector="backHome:" destination="bJj-EK-YCt" id="CCZ-bG-Roe"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DDe-Ib-U8f">
+                            <connections>
+                                <action selector="addContact:" destination="bJj-EK-YCt" id="9ag-GQ-EZb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="contactTable" destination="211-Up-lke" id="KfZ-2j-iWP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZH-Io-ug0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941" y="48"/>
+            <point key="canvasLocation" x="1467" y="48"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PGy-sq-uM2">
@@ -471,6 +483,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffz-7G-OWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="551" y="-609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hMe-sV-1d0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UfJ-Ol-VPn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VnH-8U-54d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bJj-EK-YCt" kind="relationship" relationship="rootViewController" id="bc9-hI-JLX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T3C-sw-Z77" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="48"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
