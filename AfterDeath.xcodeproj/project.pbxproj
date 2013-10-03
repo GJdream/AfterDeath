@@ -34,6 +34,7 @@
 		18A8066817FC6AB200A3F011 /* Email.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8066717FC6AB200A3F011 /* Email.m */; };
 		18B00D4917FCEAF6004DD8BE /* EmailData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18B00D4817FCEAF6004DD8BE /* EmailData.plist */; };
 		18B00D4C17FD087C004DD8BE /* EmailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B00D4B17FD087C004DD8BE /* EmailCell.m */; };
+		18B00D4E17FD0EF7004DD8BE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18B00D4D17FD0EF7004DD8BE /* README.md */; };
 		18F931B517F8E173005533E1 /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F931B417F8E173005533E1 /* ContactList.m */; };
 		18F931BB17F9D011005533E1 /* DashBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F931BA17F9D011005533E1 /* DashBoardViewController.m */; };
 		18F931BF17F9D0F7005533E1 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F931BD17F9D0F7005533E1 /* SettingsViewController.m */; };
@@ -88,6 +89,7 @@
 		18B00D4817FCEAF6004DD8BE /* EmailData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EmailData.plist; sourceTree = "<group>"; };
 		18B00D4A17FD087C004DD8BE /* EmailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailCell.h; sourceTree = "<group>"; };
 		18B00D4B17FD087C004DD8BE /* EmailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailCell.m; sourceTree = "<group>"; };
+		18B00D4D17FD0EF7004DD8BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		18F931B317F8E173005533E1 /* ContactList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactList.h; sourceTree = "<group>"; };
 		18F931B417F8E173005533E1 /* ContactList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactList.m; sourceTree = "<group>"; };
 		18F931B617F8E302005533E1 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		189619EE17F87F4700D3F6A4 = {
 			isa = PBXGroup;
 			children = (
+				18B00D4D17FD0EF7004DD8BE /* README.md */,
 				18961A0017F87F4700D3F6A4 /* AfterDeath */,
 				18961A1F17F87F4800D3F6A4 /* AfterDeathTests */,
 				189619F917F87F4700D3F6A4 /* Frameworks */,
@@ -304,6 +307,7 @@
 				18A8065E17FC541B00A3F011 /* MapViewController.xib in Resources */,
 				18B00D4917FCEAF6004DD8BE /* EmailData.plist in Resources */,
 				18961A0E17F87F4700D3F6A4 /* Main.storyboard in Resources */,
+				18B00D4E17FD0EF7004DD8BE /* README.md in Resources */,
 				18A8066517FC693800A3F011 /* EMailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
