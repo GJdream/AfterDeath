@@ -1,18 +1,18 @@
 //
-//  SettingsViewController.m
+//  MapViewController.m
 //  AfterDeath
 //
-//  Created by Snowmanzzz on 13-9-30.
+//  Created by Snowmanzzz on 13-10-2.
 //  Copyright (c) 2013年 zzz. All rights reserved.
 //
 
-#import "SettingsViewController.h"
+#import "MapViewController.h"
 
-@interface SettingsViewController ()
+@interface MapViewController ()
 
 @end
 
-@implementation SettingsViewController
+@implementation MapViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,9 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"Settings";
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,10 +35,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)goHome:(id)sender {
+
+- (IBAction)gotoHome:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-
 
 @end

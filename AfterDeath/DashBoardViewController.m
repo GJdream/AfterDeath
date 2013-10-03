@@ -8,6 +8,8 @@
 
 #import "DashBoardViewController.h"
 #import "SettingsViewController.h"
+#import "MapViewController.h"
+#import "EMailViewController.h"
 
 @interface DashBoardViewController ()
 
@@ -35,5 +37,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)gotoMap:(id)sender {
+    MapViewController *mvc = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+    [self presentViewController:mvc animated:YES completion:nil];
+}
+
+- (IBAction)gotoEmail:(id)sender {
+    EMailViewController *emvc = [[EMailViewController alloc] initWithNibName:@"EMailViewController" bundle:nil];
+    [self presentViewController:emvc animated:YES completion:nil];
+}
+
 
 @end
