@@ -8,6 +8,7 @@
 
 #import "EMailViewController.h"
 #import "EmailCell.h"
+#import "NewEmailViewController.h"
 
 @interface EMailViewController ()
 
@@ -56,6 +57,8 @@
 }
 
 - (IBAction)newEmail:(id)sender {
+    NewEmailViewController *nev = [[NewEmailViewController alloc] initWithNibName:@"NewEmailViewController" bundle:nil];
+    [self presentViewController:nev animated:YES completion:nil];
 }
 
 

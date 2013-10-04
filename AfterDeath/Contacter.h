@@ -13,6 +13,8 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *phoneNumber;
 
+@property (nonatomic, strong) NSString *note;
+
 - (id)initWithName:(NSString *)name andPhoneNumber:(NSString *)phoneNumber;
 
 @end

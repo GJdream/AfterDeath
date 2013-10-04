@@ -9,9 +9,11 @@
 #import "ContactsViewController.h"
 #import "Contacter.h"
 #import "AppDelegate.h"
+#import "ShowContactViewController.h"
 #import <AddressBookUI/AddressBookUI.h>
 
 @interface ContactsViewController () <ABNewPersonViewControllerDelegate>
+
 
 @property (weak, nonatomic) IBOutlet UITableView *contactTable;
 
@@ -32,6 +34,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"Contacts";
     self.contactList = [[ContactList alloc] init];
 }
 
@@ -85,6 +88,12 @@
     return YES;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ShowContactViewController *scv = [[ShowContactViewController alloc] initWithNibName:@"ShowContactViewController" bundle:nil];
+    scv.contacter = [self.contactList contacterAtPosition:indexPath.row];
+    [self.navigationController pushViewController:scv animated:YES];
+}
+
 #pragma mark ABNewPersonViewControllerDelegate methods
 // Dismisses the new-person view controller.
 - (void)newPersonViewController:(ABNewPersonViewController *)newPersonViewController didCompleteWithNewPerson:(ABRecordRef)person
@@ -97,8 +106,6 @@
         ABAddressBookSave(newPersonViewController.addressBook, &error);
         ABRecordID rcId = ABRecordGetRecordID(person);
         ABAddressBookSave (newPersonViewController.addressBook, &error);
-        
-        
         
         [self.navigationController popViewControllerAnimated:YES];
 

@@ -24,17 +24,20 @@
 		18961A2417F87F4800D3F6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18961A2217F87F4800D3F6A4 /* InfoPlist.strings */; };
 		18961A2617F87F4800D3F6A4 /* AfterDeathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18961A2517F87F4800D3F6A4 /* AfterDeathTests.m */; };
 		18961A3217F880BF00D3F6A4 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18961A3017F880BF00D3F6A4 /* ContactsViewController.m */; };
-		18961A3317F880BF00D3F6A4 /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18961A3117F880BF00D3F6A4 /* ContactsViewController.xib */; };
 		18961A3617F8822000D3F6A4 /* Contacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18961A3517F8822000D3F6A4 /* Contacter.m */; };
 		18A8065D17FC541B00A3F011 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8065B17FC541A00A3F011 /* MapViewController.m */; };
 		18A8065E17FC541B00A3F011 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A8065C17FC541A00A3F011 /* MapViewController.xib */; };
 		18A8066017FC5F9900A3F011 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A8065F17FC5F9900A3F011 /* MapKit.framework */; };
 		18A8066417FC693800A3F011 /* EMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8066217FC693800A3F011 /* EMailViewController.m */; };
-		18A8066517FC693800A3F011 /* EMailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A8066317FC693800A3F011 /* EMailViewController.xib */; };
 		18A8066817FC6AB200A3F011 /* Email.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8066717FC6AB200A3F011 /* Email.m */; };
 		18B00D4917FCEAF6004DD8BE /* EmailData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18B00D4817FCEAF6004DD8BE /* EmailData.plist */; };
 		18B00D4C17FD087C004DD8BE /* EmailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B00D4B17FD087C004DD8BE /* EmailCell.m */; };
 		18B00D4E17FD0EF7004DD8BE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18B00D4D17FD0EF7004DD8BE /* README.md */; };
+		18B00D5217FD1531004DD8BE /* ShowContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B00D5017FD1531004DD8BE /* ShowContactViewController.m */; };
+		18B00D5317FD1531004DD8BE /* ShowContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B00D5117FD1531004DD8BE /* ShowContactViewController.xib */; };
+		18B00D5617FD4D32004DD8BE /* ClueSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B00D5517FD4D32004DD8BE /* ClueSingleton.m */; };
+		18B00D5E17FDBD42004DD8BE /* NewEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B00D5C17FDBD42004DD8BE /* NewEmailViewController.m */; };
+		18B00D5F17FDBD42004DD8BE /* NewEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B00D5D17FDBD42004DD8BE /* NewEmailViewController.xib */; };
 		18F931B517F8E173005533E1 /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F931B417F8E173005533E1 /* ContactList.m */; };
 		18F931BB17F9D011005533E1 /* DashBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F931BA17F9D011005533E1 /* DashBoardViewController.m */; };
 		18F931BF17F9D0F7005533E1 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F931BD17F9D0F7005533E1 /* SettingsViewController.m */; };
@@ -74,7 +77,6 @@
 		18961A2317F87F4800D3F6A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18961A2517F87F4800D3F6A4 /* AfterDeathTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AfterDeathTests.m; sourceTree = "<group>"; };
 		18961A3017F880BF00D3F6A4 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
-		18961A3117F880BF00D3F6A4 /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
 		18961A3417F8822000D3F6A4 /* Contacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacter.h; sourceTree = "<group>"; };
 		18961A3517F8822000D3F6A4 /* Contacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacter.m; sourceTree = "<group>"; };
 		18A8065A17FC541A00A3F011 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -83,13 +85,21 @@
 		18A8065F17FC5F9900A3F011 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		18A8066117FC693800A3F011 /* EMailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMailViewController.h; sourceTree = "<group>"; };
 		18A8066217FC693800A3F011 /* EMailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMailViewController.m; sourceTree = "<group>"; };
-		18A8066317FC693800A3F011 /* EMailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMailViewController.xib; sourceTree = "<group>"; };
 		18A8066617FC6AB200A3F011 /* Email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Email.h; sourceTree = "<group>"; };
 		18A8066717FC6AB200A3F011 /* Email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Email.m; sourceTree = "<group>"; };
 		18B00D4817FCEAF6004DD8BE /* EmailData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EmailData.plist; sourceTree = "<group>"; };
 		18B00D4A17FD087C004DD8BE /* EmailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailCell.h; sourceTree = "<group>"; };
 		18B00D4B17FD087C004DD8BE /* EmailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailCell.m; sourceTree = "<group>"; };
 		18B00D4D17FD0EF7004DD8BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		18B00D4F17FD1531004DD8BE /* ShowContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowContactViewController.h; sourceTree = "<group>"; };
+		18B00D5017FD1531004DD8BE /* ShowContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowContactViewController.m; sourceTree = "<group>"; };
+		18B00D5117FD1531004DD8BE /* ShowContactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowContactViewController.xib; sourceTree = "<group>"; };
+		18B00D5417FD4D32004DD8BE /* ClueSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClueSingleton.h; sourceTree = "<group>"; };
+		18B00D5517FD4D32004DD8BE /* ClueSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClueSingleton.m; sourceTree = "<group>"; };
+		18B00D5817FD4E5F004DD8BE /* ClueConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClueConstants.h; sourceTree = "<group>"; };
+		18B00D5B17FDBD42004DD8BE /* NewEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEmailViewController.h; sourceTree = "<group>"; };
+		18B00D5C17FDBD42004DD8BE /* NewEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEmailViewController.m; sourceTree = "<group>"; };
+		18B00D5D17FDBD42004DD8BE /* NewEmailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewEmailViewController.xib; sourceTree = "<group>"; };
 		18F931B317F8E173005533E1 /* ContactList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactList.h; sourceTree = "<group>"; };
 		18F931B417F8E173005533E1 /* ContactList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactList.m; sourceTree = "<group>"; };
 		18F931B617F8E302005533E1 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
@@ -168,7 +178,6 @@
 				18F931BA17F9D011005533E1 /* DashBoardViewController.m */,
 				18A8066117FC693800A3F011 /* EMailViewController.h */,
 				18A8066217FC693800A3F011 /* EMailViewController.m */,
-				18A8066317FC693800A3F011 /* EMailViewController.xib */,
 				18B00D4A17FD087C004DD8BE /* EmailCell.h */,
 				18B00D4B17FD087C004DD8BE /* EmailCell.m */,
 				18A8065A17FC541A00A3F011 /* MapViewController.h */,
@@ -181,15 +190,18 @@
 				18961A1217F87F4700D3F6A4 /* Images.xcassets */,
 				18F931B617F8E302005533E1 /* ContactsViewController.h */,
 				18961A3017F880BF00D3F6A4 /* ContactsViewController.m */,
-				18961A3117F880BF00D3F6A4 /* ContactsViewController.xib */,
+				18B00D4F17FD1531004DD8BE /* ShowContactViewController.h */,
+				18B00D5017FD1531004DD8BE /* ShowContactViewController.m */,
+				18B00D5B17FDBD42004DD8BE /* NewEmailViewController.h */,
+				18B00D5C17FDBD42004DD8BE /* NewEmailViewController.m */,
+				18B00D5D17FDBD42004DD8BE /* NewEmailViewController.xib */,
+				18B00D5817FD4E5F004DD8BE /* ClueConstants.h */,
+				18B00D5117FD1531004DD8BE /* ShowContactViewController.xib */,
 				18F931BC17F9D0F7005533E1 /* SettingsViewController.h */,
 				18F931BD17F9D0F7005533E1 /* SettingsViewController.m */,
-				18961A3417F8822000D3F6A4 /* Contacter.h */,
-				18961A3517F8822000D3F6A4 /* Contacter.m */,
-				18F931B317F8E173005533E1 /* ContactList.h */,
-				18F931B417F8E173005533E1 /* ContactList.m */,
-				18A8066617FC6AB200A3F011 /* Email.h */,
-				18A8066717FC6AB200A3F011 /* Email.m */,
+				18B00D5417FD4D32004DD8BE /* ClueSingleton.h */,
+				18B00D5517FD4D32004DD8BE /* ClueSingleton.m */,
+				18B00D5717FD4D39004DD8BE /* model */,
 				18B00D4817FCEAF6004DD8BE /* EmailData.plist */,
 				18961A0117F87F4700D3F6A4 /* Supporting Files */,
 			);
@@ -223,6 +235,19 @@
 				18961A2217F87F4800D3F6A4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18B00D5717FD4D39004DD8BE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				18961A3417F8822000D3F6A4 /* Contacter.h */,
+				18961A3517F8822000D3F6A4 /* Contacter.m */,
+				18F931B317F8E173005533E1 /* ContactList.h */,
+				18F931B417F8E173005533E1 /* ContactList.m */,
+				18A8066617FC6AB200A3F011 /* Email.h */,
+				18A8066717FC6AB200A3F011 /* Email.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,13 +327,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				18961A1317F87F4700D3F6A4 /* Images.xcassets in Resources */,
-				18961A3317F880BF00D3F6A4 /* ContactsViewController.xib in Resources */,
 				18961A0517F87F4700D3F6A4 /* InfoPlist.strings in Resources */,
 				18A8065E17FC541B00A3F011 /* MapViewController.xib in Resources */,
+				18B00D5317FD1531004DD8BE /* ShowContactViewController.xib in Resources */,
+				18B00D5F17FDBD42004DD8BE /* NewEmailViewController.xib in Resources */,
 				18B00D4917FCEAF6004DD8BE /* EmailData.plist in Resources */,
 				18961A0E17F87F4700D3F6A4 /* Main.storyboard in Resources */,
 				18B00D4E17FD0EF7004DD8BE /* README.md in Resources */,
-				18A8066517FC693800A3F011 /* EMailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,10 +354,13 @@
 			files = (
 				18507BD017FABE2500F0940D /* DialViewController.m in Sources */,
 				18B00D4C17FD087C004DD8BE /* EmailCell.m in Sources */,
+				18B00D5617FD4D32004DD8BE /* ClueSingleton.m in Sources */,
 				18A8066417FC693800A3F011 /* EMailViewController.m in Sources */,
+				18B00D5E17FDBD42004DD8BE /* NewEmailViewController.m in Sources */,
 				18F931B517F8E173005533E1 /* ContactList.m in Sources */,
 				18961A1117F87F4700D3F6A4 /* ViewController.m in Sources */,
 				18961A3617F8822000D3F6A4 /* Contacter.m in Sources */,
+				18B00D5217FD1531004DD8BE /* ShowContactViewController.m in Sources */,
 				18F931BF17F9D0F7005533E1 /* SettingsViewController.m in Sources */,
 				18A8066817FC6AB200A3F011 /* Email.m in Sources */,
 				18961A3217F880BF00D3F6A4 /* ContactsViewController.m in Sources */,

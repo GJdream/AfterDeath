@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Contacter;
 
 @interface ContactList : NSObject
 
 @property (strong, nonatomic) NSArray *contactArray;
+
+- (NSString *)contacterNameAtPosition:(NSInteger)i;
+
+- (Contacter *)contacterAtPosition:(NSInteger)i;
 
 @end
