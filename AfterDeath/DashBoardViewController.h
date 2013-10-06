@@ -12,4 +12,7 @@
 
 - (IBAction)gotoSetting:(id)sender;
 
+//@property (nonatomic, strong) UIView *controlView;
+
+@property (weak, nonatomic) IBOutlet UIView *controlView;
 @end

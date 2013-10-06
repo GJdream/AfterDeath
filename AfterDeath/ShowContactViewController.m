@@ -56,7 +56,7 @@
         alert.delegate = self;
        
 //        [[[ClueSingleton sharedClue] clueArray] addound_like_Ch];
-        [((ClueSingleton *)[ClueSingleton sharedClue]).clueArray addObject:Sound_like_Ch];
+        [((ClueSingleton *)[ClueSingleton sharedClue]) addAndSaveClue:Sound_like_Ch]; //addObject:Sound_like_Ch];
         [alert show];
     }
 }

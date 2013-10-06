@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#define INSTANCEVARIABLE_KEY @"clueArray"
 
-@interface ClueSingleton : NSObject
+@interface ClueSingleton : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSMutableArray *clueArray;
 
 + (id)sharedClue;
 
+- (void)saveClue;
+
+- (void)addAndSaveClue:(id)clue;
 @end

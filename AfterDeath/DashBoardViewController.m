@@ -10,6 +10,7 @@
 #import "SettingsViewController.h"
 #import "MapViewController.h"
 #import "EMailViewController.h"
+#import "ClueViewController.h"
 
 @interface DashBoardViewController ()
 
@@ -30,6 +31,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+//    self.controlView = [[UIView alloc] initWithFrame:CGRectMake(10, 300, 300, 200)];
+//    self.controlView.backgroundColor = [UIColor blackColor];
+//    self.controlView.alpha = 0.5;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,7 +46,8 @@
 
 - (IBAction)gotoMap:(id)sender {
     MapViewController *mvc = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
-    [self presentViewController:mvc animated:YES completion:nil];
+    self.view = mvc.view;
+//    [self presentViewController:mvc animated:YES completion:nil];
 }
 
 - (IBAction)gotoEmail:(id)sender {
@@ -49,4 +56,34 @@
 }
 
 
+- (IBAction)bringUpGameDashBoard:(id)sender {
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        self.controlView.frame = CGRectMake(0, 300, 320, 268);
+    }];
+
+}
+
+- (void)hideGameDashBoard {
+    // dismiss controlView
+    [UIView animateWithDuration:0.5 animations:^{
+        self.controlView.frame = CGRectMake(0, 568, 320, 0);
+    }];
+}
+
+
+- (IBAction)tapView:(id)sender {
+    UITapGestureRecognizer *tap = (UITapGestureRecognizer *)sender;
+    CGPoint point = [tap locationInView:self.view];
+    if (!CGRectContainsPoint(self.controlView.frame, point)) {
+        [self hideGameDashBoard];
+    }
+}
+
+- (IBAction)viewClue:(id)sender {
+    ClueViewController *cvc = [[ClueViewController alloc] initWithNibName:@"ClueViewController" bundle:nil];
+    cvc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:cvc animated:YES completion:nil];
+}
 @end

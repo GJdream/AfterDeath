@@ -15,7 +15,11 @@
 
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedClue = [[self alloc] init];
+        NSData *data = [NSData dataWithContentsOfFile:[NSHomeDirectory() stringByAppendingString:@"/Documents/clue"]];
+        sharedClue = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        if (sharedClue == nil) {
+            sharedClue = [[self alloc] init];
+        }
     });
     return sharedClue;
 }
@@ -27,4 +31,23 @@
     return self;
 }
 
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.clueArray forKey:INSTANCEVARIABLE_KEY];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self.clueArray = [aDecoder decodeObjectForKey:INSTANCEVARIABLE_KEY];
+    return self;
+}
+
+- (void)saveClue {
+    NSString *filename = [NSHomeDirectory() stringByAppendingString:@"/Documents/clue"];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self];
+    [data writeToFile:filename atomically:YES];
+}
+
+- (void)addAndSaveClue:(id)clue {
+    [self.clueArray addObject:clue];
+    [self saveClue];
+}
 @end

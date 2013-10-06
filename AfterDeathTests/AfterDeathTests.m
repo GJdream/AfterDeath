@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ClueSingleton.h"
+#import "ClueConstants.h"
 
 @interface AfterDeathTests : XCTestCase
 
@@ -28,7 +30,11 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+//    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssert([[ClueSingleton sharedClue] clueArray].count > 0, @"wo cao");
+
+    [[ClueSingleton sharedClue] addAndSaveClue:Sound_like_Ch];
+    XCTAssert([[ClueSingleton sharedClue] clueArray].count > 0, @"wo cao");
 }
 
 @end
