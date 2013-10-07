@@ -47,7 +47,9 @@
 }
 
 - (void)addAndSaveClue:(id)clue {
-    [self.clueArray addObject:clue];
-    [self saveClue];
+    if (![self.clueArray containsObject:clue]) {
+        [self.clueArray addObject:clue];
+        [self saveClue];
+    }
 }
 @end

@@ -383,6 +383,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lje-kQ-59a">
                                 <rect key="frame" x="11" y="144" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Map" image="Maps.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -390,6 +391,7 @@
                                 </state>
                                 <connections>
                                     <action selector="gotoMap:" destination="bMT-iV-lm3" eventType="touchUpInside" id="pCf-rZ-7r1"/>
+                                    <outletCollection property="gestureRecognizers" destination="ves-UU-QKx" appends="YES" id="wmW-CX-Zzt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AtQ-Rt-1iv">
@@ -407,24 +409,28 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOY-EC-zZg">
                                 <rect key="frame" x="204" y="36" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Settings" image="Settings.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ves-UU-QKx" appends="YES" id="dt9-qT-n51"/>
                                     <segue destination="cyM-b1-Vk3" kind="modal" id="ycM-wh-3Tc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCB-2s-PVV">
                                 <rect key="frame" x="107" y="144" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="email" image="Mail.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ves-UU-QKx" appends="YES" id="8fc-5n-a8A"/>
                                     <segue destination="Jfb-WA-ZZO" kind="modal" id="Xed-kA-j8G"/>
                                 </connections>
                             </button>
@@ -455,7 +461,13 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="buttonSetting" destination="OOY-EC-zZg" id="mUH-Tp-aq2"/>
                         <outlet property="controlView" destination="jVS-u1-dml" id="zzt-Y4-K46"/>
+                        <outletCollection property="buttons" destination="AtQ-Rt-1iv" id="gca-js-Qes"/>
+                        <outletCollection property="buttons" destination="gCB-2s-PVV" id="jkc-zB-myN"/>
+                        <outletCollection property="buttons" destination="Lje-kQ-59a" id="hHM-61-PGh"/>
+                        <outletCollection property="buttons" destination="ZK2-MY-BKO" id="irj-iV-k1a"/>
+                        <outletCollection property="buttons" destination="OOY-EC-zZg" id="ehm-gb-GZ8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Siq-Zg-awe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -469,6 +481,11 @@
                         <action selector="tapView:" destination="bMT-iV-lm3" id="xUG-mi-ywd"/>
                     </connections>
                 </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ves-UU-QKx">
+                    <connections>
+                        <action selector="longPress:" destination="bMT-iV-lm3" id="Voz-Bg-Jhm"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="452" y="48"/>
         </scene>

@@ -49,9 +49,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *clue = @"clue";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:clue];
-    if (!cell) {
-        
-    }
+    cell.textLabel.text = [[[ClueSingleton sharedClue] clueArray] objectAtIndex:indexPath.row];
     return cell;
 }
 

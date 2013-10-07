@@ -14,6 +14,10 @@
 
 @interface DashBoardViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonSetting;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *buttons;
+
+@property (weak, nonatomic) IBOutlet UIImageView *iphonePic;
 @end
 
 @implementation DashBoardViewController
@@ -46,8 +50,7 @@
 
 - (IBAction)gotoMap:(id)sender {
     MapViewController *mvc = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
-    self.view = mvc.view;
-//    [self presentViewController:mvc animated:YES completion:nil];
+    [self presentViewController:mvc animated:YES completion:nil];
 }
 
 - (IBAction)gotoEmail:(id)sender {
@@ -74,6 +77,11 @@
 
 
 - (IBAction)tapView:(id)sender {
+    [self.buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [((UIButton *)obj).layer removeAnimationForKey:@"iconShaking"];
+    }];
+
+    
     UITapGestureRecognizer *tap = (UITapGestureRecognizer *)sender;
     CGPoint point = [tap locationInView:self.view];
     if (!CGRectContainsPoint(self.controlView.frame, point)) {
@@ -86,4 +94,24 @@
     cvc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:cvc animated:YES completion:nil];
 }
+
+- (IBAction)longPress:(id)sender {
+    [self shakeIcon];
+}
+
+- (void)shakeIcon
+{
+    CABasicAnimation* anim = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    [anim setToValue:[NSNumber numberWithFloat:-M_PI/32]];
+    [anim setFromValue:[NSNumber numberWithDouble:M_PI/32]]; // rotation angle
+    [anim setDuration:0.1];
+    [anim setRepeatCount:NSUIntegerMax];
+    [anim setAutoreverses:YES];
+//    [self.buttonSetting.layer addAnimation:anim forKey:@"iconShake"];
+    [self.buttons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [((UIButton *)obj).layer addAnimation:anim forKey:@"iconShaking"];
+    }];
+
+}
+
 @end
