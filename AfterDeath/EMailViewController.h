@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewEmailViewController.h"
 
-@interface EMailViewController : UIViewController <UITableViewDataSource>
+@interface EMailViewController : UIViewController <UITableViewDataSource, NewEmailProtocal>
 
 @property (strong, nonatomic) NSArray *contentArray;
 

@@ -12,6 +12,8 @@
 
 @interface EMailViewController ()
 
+@property (weak, nonatomic) IBOutlet UIProgressView *sendingProgress;
+
 @end
 
 @implementation EMailViewController
@@ -58,7 +60,14 @@
 
 - (IBAction)newEmail:(id)sender {
     NewEmailViewController *nev = [[NewEmailViewController alloc] initWithNibName:@"NewEmailViewController" bundle:nil];
+    nev.delegate = self;
     [self presentViewController:nev animated:YES completion:nil];
+}
+
+- (void)emailDidClickSent:(id)sender {
+    self.sendingProgress.hidden = NO;
+    self.sendingProgress.progress = 0;
+    [self.sendingProgress setProgress:1 animated:YES];
 }
 
 

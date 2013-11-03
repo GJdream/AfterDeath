@@ -35,4 +35,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)dismiss:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)sendEmail:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self performSelector:@selector(f) withObject:nil afterDelay:0.5];
+}
+
+- (void)f {
+    [self.delegate emailDidClickSent:self];
+}
+
 @end

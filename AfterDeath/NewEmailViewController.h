@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewEmailViewController : UIViewController
+@protocol NewEmailProtocal <NSObject>
+- (void)emailDidClickSent:(id)sender;
+
+@end
+
+@interface NewEmailViewController : UIViewController <UITableViewDelegate>
+
+@property (weak, nonatomic) id<NewEmailProtocal> delegate;
 
 @end
